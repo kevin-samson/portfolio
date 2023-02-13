@@ -24,6 +24,7 @@ module.exports = {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        popins: ["Poppins", "sans-serif"],
       },
     },
     screens: {

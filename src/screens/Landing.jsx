@@ -43,9 +43,9 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-roboto z-10 text-center md:text-start">
+          <p className="text-5xl font-popins z-10 text-center md:text-start md:w-[600px]">
             Hey, I'm <br></br>
-            <span className="text-blue font-extrabold text-[76px]">
+            <span className="text-blue font-extrabold text-7xl ">
               Kevin Samson
             </span>
           </p>
