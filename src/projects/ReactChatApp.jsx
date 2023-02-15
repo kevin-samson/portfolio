@@ -74,7 +74,7 @@ const ReactChatApp = () => {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner relative w-full overflow-hidden ">
+          <div class="carousel-inner relative w-full overflow-hidden rounded-lg">
             <div class="carousel-item active float-left w-full">
               <img src={pic1} class="block w-full" alt="Wild Landscape" />
             </div>
