@@ -8,7 +8,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="flex flex-col flex-wrap md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="flex flex-col flex-wrap md:flex md:justify-between gap-16 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
       <motion.div
