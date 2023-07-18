@@ -10,7 +10,7 @@ const ReactChatApp = () => {
       <div className="flex md:flex-row md:space-x-6 flex-col">
         <div className="md:w-1/2 space-y-5">
           <h4 className="text-4xl">React chat app </h4>
-          <div className="grid grid-cols-5 grid-rows-2 gap-3 md:w-10/12 items-center">
+          <div className="grid grid-cols-3 md:grid-cols-5 md:grid-rows-2 gap-3 md:w-10/12 items-center">
             <TechUsed tech={"React"} />
             <TechUsed tech={"Java Script"} />
             <TechUsed tech={"Tailwind"} />
