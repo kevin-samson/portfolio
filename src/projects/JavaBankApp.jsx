@@ -1,61 +1,59 @@
 import React from "react";
 import TechUsed from "../components/TechUsed";
-import pic1 from "../assets/React Chat App/1.png";
-import pic2 from "../assets/React Chat App/2.png";
-import pic3 from "../assets/React Chat App/3.png";
+import pic1 from "../assets/Java Banking App/1.png";
+import pic2 from "../assets/Java Banking App/2.png";
+import pic3 from "../assets/Java Banking App/3.png";
 
-const ReactChatApp = () => {
+const JavaBankApp = () => {
   return (
-    <div className="flex flex-col justify-start mb-20 ">
-      <div className="flex md:flex-row md:space-x-6 flex-col">
+    <div className="flex flex-col justify-start mb-20 h-auto">
+      <div className="flex flex-col md:flex-row-reverse md:justify-between md:items-center">
         <div className="md:w-1/2 space-y-5">
-          <h4 className="text-4xl">React chat app </h4>
+          <h4 className="text-4xl">Java banking app </h4>
           <div className="flex space-x-2">
-            <TechUsed tech={"React"} />
-            <TechUsed tech={"Java Script"} />
-            <TechUsed tech={"Tailwind"} />
-            <TechUsed tech={"HTML"} />
-            <TechUsed tech={"CSS"} />
-            <TechUsed tech={"FireBase"} />
+            <TechUsed tech={"Java"} />
+            <TechUsed tech={"Swing"} />
+            <TechUsed tech={"AWT"} />
           </div>
-          <div className="flex flex-row justify-start space-x-3">
+          <div className="flex flex-row space-x-6">
             <a
-              className="rounded-sm bg-gradient-rainblue py-0.5 px-1  h-auto w-auto"
-              href="https://github.com/kevin-samson/react-chat-app"
+              className="rounded-sm bg-gradient-rainblue py-0.5 px-1 h-10 w-auto"
+              href="https://github.com/kevin-samson/Java-banking-app"
               target="_blank"
               rel="noreferrer"
-            >
-              <div className="bg-deep-blue font-roboto hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 py-2 font-semibold">
-                GitHub Repo
-              </div>
-            </a>
-            <a
-              href="https://chat-app-65bc6.web.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-sm bg-gradient-rainblue py-0.5 px-1  h-auto w-auto"
             >
               <div className="bg-deep-blue font-roboto hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-semibold">
-                Website Link
+                GitHub Repo
               </div>
             </a>
           </div>
           <p className="text-lg font-popins">
-            A web applcation made using react with firebase as server-side. The
-            Firestore Databse lets me build rich, collaborative applications by
-            allowing secure access to the database directly from client-side
-            code. This website is also hosted on Firebase Hosting .
+            Made using Java Swing and Java awt. Has a seperate Login page for
+            Users and Admin <br /> <br /> User Side includes <br />
+            <ul className="list-disc list-inside">
+              <li>Create a new user</li>
+              <li>Withdraw or Deposit cash</li>
+              <li>View all past Transactions</li>
+            </ul>
+            <br />
+            Admin Side includes
+            <ul className="list-disc list-inside">
+              <li>View all users</li>
+              <li>Delete users</li>
+              <li>Modify Users</li>
+            </ul>
+            <p></p> <br /> Made for year 2 sem 1 OOPS project
           </p>
         </div>
         <div
-          id="carouselExampleIndicators"
-          class="carousel slide relative md:w-1/2"
+          id="JavaBankApp"
+          class="carousel slide relative h-96"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#JavaBankApp"
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
@@ -63,18 +61,18 @@ const ReactChatApp = () => {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#JavaBankApp"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleIndicators"
+              data-bs-target="#JavaBankApp"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner relative w-full overflow-hidden rounded-lg">
+          <div class="carousel-inner relative overflow-hidden rounded-lg object-cover h-96 w-96 ">
             <div class="carousel-item active float-left w-full">
               <img src={pic1} class="block w-full" alt="Wild Landscape" />
             </div>
@@ -88,7 +86,7 @@ const ReactChatApp = () => {
           <button
             className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#JavaBankApp"
             data-bs-slide="prev"
           >
             <span
@@ -100,7 +98,7 @@ const ReactChatApp = () => {
           <button
             className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#JavaBankApp"
             data-bs-slide="next"
           >
             <span
@@ -115,4 +113,4 @@ const ReactChatApp = () => {
   );
 };
 
-export default ReactChatApp;
+export default JavaBankApp;

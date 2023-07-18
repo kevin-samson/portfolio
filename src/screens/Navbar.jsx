@@ -31,12 +31,12 @@ function Navbar({ selectedPage, setSelectedPage, isTopOfPage }) {
       }`}
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between">
-        <div className="bg-yellow p-1 px-4 rounded-l-full rounded-r-full ">
-          <h4 className="font-roboto text-3xl font-bold">Kevin</h4>
+        <div className="p-1 px-4 rounded-l-full rounded-r-full ">
+          <h4 className="font-roboto text-3xl font-bold">Kevin </h4>
         </div>
 
         {isAboveSmallScreen ? (
-          <div className="flex justify-between gap-16 font-sans text-sm font-semibold">
+          <div className="flex justify-between gap-16 font-sans text-md font-semibold">
             {Link("Home", selectedPage, setSelectedPage)}
             {Link("Skills", selectedPage, setSelectedPage)}
             {Link("Projects", selectedPage, setSelectedPage)}

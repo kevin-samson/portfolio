@@ -1,14 +1,14 @@
 import { useMediaQuery } from "react-responsive";
 import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import JavaBankApp from "../projects/JavaBankApp";
 import ReactChatApp from "../projects/ReactChatApp";
 import React from "react";
 
 const Projects = () => {
   const isAboveMediumScreen = useMediaQuery({ query: "(min-width: 1060px)" });
   return (
-    <section id="projects" className="pt-2 pb-24">
-      <div className="md:flex md:justify-between md:gap-14 mt-32 md:flex-col">
+    <section id="projects" className="pt-2 pb-24 ">
+      <div className=" flex flex-col flex-wrap md:flex md:justify-between md:gap-14 mt-32 md:flex-col md:mb-0">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -26,6 +26,8 @@ const Projects = () => {
 
           <p className="text-2xl">A Selection Of Stuff I've Built</p>
         </motion.div>
+        <ReactChatApp />
+        <JavaBankApp />
         <ReactChatApp />
       </div>
     </section>
