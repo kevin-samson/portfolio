@@ -11,7 +11,10 @@ const FitnessApp = () => {
         <div className="md:w-1/2 space-y-5">
           <h4 className="text-4xl">FitFusion </h4>
           <div className="flex space-x-2">
-            <TechUsed tech={"Python"} />
+            <TechUsed tech={"Flask"} />
+            <TechUsed tech={"HTML"} />
+            <TechUsed tech={"CSS"} />
+            <TechUsed tech={"MySQL"} />
           </div>
           <div className="flex flex-row justify-start space-x-3">
             <a
@@ -26,15 +29,18 @@ const FitnessApp = () => {
             </a>
           </div>
           <p className="text-lg font-popins">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            magnam suscipit error officia asperiores, velit veniam ducimus,
-            porro saepe adipisci ullam dicta nostrum doloremque dolorum quis
-            consequatur consequuntur rerum accusantium?
+            We have used Python, MySql, HTML and Tailwind CSS Our website is a
+            Fitness website. It has a sign-in and login page. After, logging in
+            we have a member’s page that includes exercises and the amount of
+            calories we burn doing the exercises with trainers who support us
+            for the exercise. It helps us track our progress This includes a
+            table that shows how many calories they burned during each workout.
+            It also lets us track our water intake, food intake, and our BMI.
           </p>
         </div>
         <div
           id="fitfusuion"
-          class="carousel slide relative md:w-1/2"
+          class="carousel slide relative md:w-1/2 pt-10"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
