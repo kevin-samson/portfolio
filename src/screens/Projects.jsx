@@ -2,6 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import { motion } from "framer-motion";
 import JavaBankApp from "../projects/JavaBankApp";
 import ReactChatApp from "../projects/ReactChatApp";
+import FitnessApp from "../projects/FitnessApp";
 import React from "react";
 
 const Projects = () => {
@@ -28,7 +29,7 @@ const Projects = () => {
         </motion.div>
         <ReactChatApp />
         <JavaBankApp />
-        <ReactChatApp />
+        <FitnessApp />
       </div>
     </section>
   );
