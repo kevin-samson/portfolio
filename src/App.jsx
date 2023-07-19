@@ -6,6 +6,7 @@ import DotGroup from "./screens/DotGroup.jsx";
 import MySkills from "./screens/MySkills.jsx";
 import Landing from "./screens/Landing.jsx";
 import Projects from "./screens/Projects.jsx";
+import { motion } from "framer-motion";
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -17,10 +18,11 @@ const App = () => {
   useEffect(() => {
     const onScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 0) {
-        setIsTopOfPage(true);
-      } else {
+      if (scrollPosition === 0) {
         setIsTopOfPage(false);
+        setSelectedPage("home");
+      } else {
+        setIsTopOfPage(true);
       }
     };
     window.addEventListener("scroll", onScroll);
@@ -46,11 +48,23 @@ const App = () => {
       </div>
 
       <div className="md:w-5/6 mx-auto md:h-full w-full">
-        <MySkills />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+        >
+          <MySkills />
+        </motion.div>
       </div>
 
       <div className="md:w-5/6 mx-auto ">
-        <Projects />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("projects")}
+        >
+          <Projects />
+        </motion.div>
       </div>
     </div>
   );
