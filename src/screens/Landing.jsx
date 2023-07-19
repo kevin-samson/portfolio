@@ -3,6 +3,7 @@ import useMediaQuery from "react-responsive";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import ProfileImage from "../assets/profile-image.jpg";
+import pdf from "../assets/KevinSamsonResume.pdf";
 
 const Landing = ({ setSelectedPage }) => {
   return (
@@ -76,15 +77,16 @@ const Landing = ({ setSelectedPage }) => {
           >
             My Skills
           </AnchorLink>
-          <AnchorLink
+          <a
             className="rounded-sm bg-gradient-rainblue py-0.5 px-1"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
+            href={pdf}
+            target="_blank"
+            rel="noreferrer"
           >
             <div className="bg-deep-blue font-roboto hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-semibold">
               Résumé
             </div>
-          </AnchorLink>
+          </a>
         </motion.div>
 
         <motion.div
