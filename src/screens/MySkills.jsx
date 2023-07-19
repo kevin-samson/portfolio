@@ -28,7 +28,7 @@ const MySkills = () => {
           </p>
 
           <p className="text-2xl md:w-[1000px]">
-            These are the skills i use to bring my ideas to life.
+            These are the skills I use to bring my ideas to life.
           </p>
         </motion.div>
         <motion.div
