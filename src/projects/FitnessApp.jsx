@@ -40,15 +40,15 @@ const FitnessApp = () => {
         </div>
         <div
           id="fitfusuion"
-          class="carousel slide relative md:w-1/2 pt-10"
+          className="carousel slide relative md:w-1/2 pt-10"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+          <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
             <button
               type="button"
               data-bs-target="#fitfusuion"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -65,15 +65,15 @@ const FitnessApp = () => {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner relative w-full overflow-hidden rounded-lg">
-            <div class="carousel-item active float-left w-full">
-              <img src={pic1} class="block w-full" alt="Wild Landscape" />
+          <div className="carousel-inner relative w-full overflow-hidden rounded-lg">
+            <div className="carousel-item active float-left w-full">
+              <img src={pic1} className="block w-full" alt="Wild Landscape" />
             </div>
-            <div class="carousel-item float-left w-full">
-              <img src={pic2} class="block w-full" alt="Camera" />
+            <div className="carousel-item float-left w-full">
+              <img src={pic2} className="block w-full" alt="Camera" />
             </div>
-            <div class="carousel-item float-left w-full">
-              <img src={pic3} class="block w-full" alt="Exotic Fruits" />
+            <div className="carousel-item float-left w-full">
+              <img src={pic3} className="block w-full" alt="Exotic Fruits" />
             </div>
           </div>
           <button

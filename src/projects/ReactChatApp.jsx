@@ -10,7 +10,7 @@ const ReactChatApp = () => {
       <div className="flex md:flex-row md:space-x-6 flex-col">
         <div className="md:w-1/2 space-y-5">
           <h4 className="text-4xl">React chat app </h4>
-          <div className="flex space-x-2">
+          <div className="flex flex-wrap space-x-2 space-y-2">
             <TechUsed tech={"React"} />
             <TechUsed tech={"Java Script"} />
             <TechUsed tech={"Tailwind"} />
@@ -49,15 +49,15 @@ const ReactChatApp = () => {
         </div>
         <div
           id="carouselExampleIndicators"
-          class="carousel slide relative md:w-1/2"
+          className="carousel slide relative md:w-1/2"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+          <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -74,15 +74,15 @@ const ReactChatApp = () => {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner relative w-full overflow-hidden rounded-lg">
-            <div class="carousel-item active float-left w-full">
-              <img src={pic1} class="block w-full" alt="Wild Landscape" />
+          <div className="carousel-inner relative w-full overflow-hidden rounded-lg">
+            <div className="carousel-item active float-left w-full">
+              <img src={pic1} className="block w-full" alt="Wild Landscape" />
             </div>
-            <div class="carousel-item float-left w-full">
-              <img src={pic2} class="block w-full" alt="Camera" />
+            <div className="carousel-item float-left w-full">
+              <img src={pic2} className="block w-full" alt="Camera" />
             </div>
-            <div class="carousel-item float-left w-full">
-              <img src={pic3} class="block w-full" alt="Exotic Fruits" />
+            <div className="carousel-item float-left w-full">
+              <img src={pic3} className="block w-full" alt="Exotic Fruits" />
             </div>
           </div>
           <button

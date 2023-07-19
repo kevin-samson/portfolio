@@ -35,7 +35,7 @@ const App = () => {
         isTopOfPage={isTopOfPage}
       />
 
-      <div className="md:w-5/6 mx-auto md:h-full">
+      <div className="md:w-5/6 mx-auto md:h-full w-full">
         <Landing setSelectedPage={setSelectedPage} />
         {isAboveMediumScreen && (
           <DotGroup
@@ -45,11 +45,11 @@ const App = () => {
         )}
       </div>
 
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="md:w-5/6 mx-auto md:h-full w-full">
         <MySkills />
       </div>
 
-      <div className="w-5/6 mx-auto ">
+      <div className="md:w-5/6 mx-auto ">
         <Projects />
       </div>
     </div>

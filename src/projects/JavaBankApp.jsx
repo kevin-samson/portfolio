@@ -30,32 +30,32 @@ const JavaBankApp = () => {
           <p className="text-lg font-popins">
             Made using Java Swing and Java awt. Has a seperate Login page for
             Users and Admin <br /> <br /> User Side includes <br />
-            <ul className="list-disc list-inside">
-              <li>Create a new user</li>
-              <li>Withdraw or Deposit cash</li>
-              <li>View all past Transactions</li>
-            </ul>
-            <br />
-            Admin Side includes
-            <ul className="list-disc list-inside">
-              <li>View all users</li>
-              <li>Delete users</li>
-              <li>Modify Users</li>
-            </ul>
-            <p></p> <br /> Made for year 2 sem 1 OOPS project
           </p>
+          <ul className="list-disc list-inside">
+            <li>Create a new user</li>
+            <li>Withdraw or Deposit cash</li>
+            <li>View all past Transactions</li>
+          </ul>
+          <br />
+          Admin Side includes
+          <ul className="list-disc list-inside">
+            <li>View all users</li>
+            <li>Delete users</li>
+            <li>Modify Users</li>
+          </ul>
+          <br /> Made for year 2 sem 1 OOPS project
         </div>
         <div
           id="JavaBankApp"
-          class="carousel slide relative h-96"
+          className="carousel slide relative h-96"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+          <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
             <button
               type="button"
               data-bs-target="#JavaBankApp"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -72,15 +72,15 @@ const JavaBankApp = () => {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner relative overflow-hidden rounded-lg object-cover h-96 w-96 ">
-            <div class="carousel-item active float-left w-full">
-              <img src={pic1} class="block w-full" alt="Wild Landscape" />
+          <div className="carousel-inner relative overflow-hidden rounded-lg object-cover h-96 w-96 ">
+            <div className="carousel-item active float-left w-full">
+              <img src={pic1} className="block w-full" alt="Wild Landscape" />
             </div>
-            <div class="carousel-item float-left w-full">
-              <img src={pic2} class="block w-full" alt="Camera" />
+            <div className="carousel-item float-left w-full">
+              <img src={pic2} className="block w-full" alt="Camera" />
             </div>
-            <div class="carousel-item float-left w-full">
-              <img src={pic3} class="block w-full" alt="Exotic Fruits" />
+            <div className="carousel-item float-left w-full">
+              <img src={pic3} className="block w-full" alt="Exotic Fruits" />
             </div>
           </div>
           <button
